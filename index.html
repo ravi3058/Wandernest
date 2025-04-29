@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wandernest - Connect. Plan. Travel.</title>
+    <style>
+        :root {
+            --primary: #4d7c59;
+            --primary-foreground: #ffffff;
+            --background: #ffffff;
+            --foreground: #0f172a;
+            --muted: #f1f5f9;
+            --muted-foreground: #64748b;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: var(--background);
+            color: var(--foreground);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        header {
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+        
+        p {
+            font-size: 1.1rem;
+            color: var(--muted-foreground);
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        
+        .button-primary {
+            background-color: var(--primary);
+            color: var(--primary-foreground);
+        }
+        
+        .button-primary:hover {
+            opacity: 0.9;
+        }
+        
+        .button-outline {
+            border: 1px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .button-outline:hover {
+            background-color: var(--muted);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .feature {
+            background-color: var(--muted);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+        }
+        
+        .feature h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--muted);
+            font-size: 0.875rem;
+            color: var(--muted-foreground);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>WANDERNEST</h1>
+            <p>Connect with fellow travelers, plan personalized trips, and share your adventures. Whether you're seeking new friends or unforgettable experiences, your journey begins here.</p>
+        </header>
+        
+        <div class="buttons">
+            <a href="https://github.com/yourusername/wandernest" class="button button-outline">View on GitHub</a>
+            <a href="https://wandernest.vercel.app" class="button button-primary">Visit Live Demo</a>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>Community First</h3>
+                <p>Connect with like-minded travelers, share experiences, and make lasting friendships along your journey.</p>
+            </div>
+            <div class="feature">
+                <h3>Personalized Itineraries</h3>
+                <p>Get AI-powered travel recommendations based on your preferences, budget, and travel style.</p>
+            </div>
+            <div class="feature">
+                <h3>Workation Stays</h3>
+                <p>Find the perfect blend of work and vacation with our curated workation-friendly accommodations.</p>
+            </div>
+        </div>
+        
+        <div class="deployment-guide">
+            <h2>Deployment Guide</h2>
+            <p>This is a Next.js project that can be deployed using Vercel or any other Next.js-compatible hosting service.</p>
+            <ol style="text-align: left; max-width: 600px; margin: 0 auto;">
+                <li>Clone the repository: <code>git clone https://github.com/yourusername/wandernest.git</code></li>
+                <li>Install dependencies: <code>npm install</code> or <code>yarn install</code></li>
+                <li>Run development server: <code>npm run dev</code> or <code>yarn dev</code></li>
+                <li>Build for production: <code>npm run build</code> or <code>yarn build</code></li>
+                <li>Deploy to Vercel: Connect your GitHub repository to Vercel for automatic deployments</li>
+            </ol>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Wandernest. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
